@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pixelart{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.un {
+    display: flex;
+    flex-direction: row;
+}
+
+#vert{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+}
+
+#blanc{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}
+
+#noir{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
