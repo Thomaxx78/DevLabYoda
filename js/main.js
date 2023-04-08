@@ -1,6 +1,22 @@
 const animateBtn = document.getElementById("animate-btn");
 
+function random(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+  
+  // Create a timeline for the random animation
+  const randomTimeline = gsap.timeline({ repeat: -1, yoyo: true });
+  
+  // Create a single tween that animates all elements at the same time
+  randomTimeline.to([".a", ".b", ".c", ".d", ".e", ".f", ".g", ".h", ".i", ".j", ".k", ".l", ".m", ".n", ".o", ".p", ".q", ".r", ".s", ".t", ".u", ".v", ".w", ".x", ".y", ".z", ".aa", ".ab", ".ac", ".ad", ".ae", ".af", ".ag", ".ah", ".ai", ".aj", ".ak", ".al", ".am", ".an", ".ao", ".ap", ".aq", ".ar"], { 
+    duration: 6, 
+    x: () => random(window.innerWidth,0) 
+  });
+
 animateBtn.onclick = () => {
+    randomTimeline.pause();
+
+
     gsap.to(".a", {duration: 2, x: 200});
     gsap.to(".b", {duration: 2, x: 200});
     gsap.to(".c", {duration: 1, x: 200});
