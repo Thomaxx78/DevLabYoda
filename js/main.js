@@ -8,7 +8,7 @@ function random(min, max) {
   const randomTimeline = gsap.timeline({ repeat: -1, yoyo: true });
   
   // Create a single tween that animates all elements at the same time
-  randomTimeline.to([".a", ".b", ".c", ".d", ".e", ".f", ".g", ".h", ".i", ".j", ".k", ".l", ".m", ".n", ".o", ".p", ".q", ".r", ".s", ".t", ".u", ".v", ".w", ".x", ".y", ".z", ".aa", ".ab", ".ac", ".ad", ".ae", ".af", ".ag", ".ah", ".ai", ".aj", ".ak", ".al", ".am", ".an", ".ao", ".ap", ".aq", ".ar"], { 
+  randomTimeline.to([".a", ".b", ".c", ".d", ".e", ".f", ".g", ".h", ".i", ".j", ".k", ".l", ".m", ".n", ".o", ".p", ".q", ".r", ".s", ".t", ".u", ".v", ".w", ".x", ".y", ".z", ".aa", ".ab", ".ac", ".ad", ".ae", ".af", ".ag", ".ah", ".ai", ".aj", ".ak", ".al", ".am", ".an", ".ao", ".ap", ".aq", ".ar", ".as", ".at", ".au", ".av", ".aw", ".ax", ".ay"], { 
     duration: 6, 
     x: () => random(window.innerWidth,0) 
   });
