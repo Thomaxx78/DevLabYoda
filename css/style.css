@@ -32,3 +32,21 @@
     width: 50px;
     background-color: black;
 }
+
+#beige {
+    height: 50px;
+    width: 50px;
+    background-color: beige;
+}
+
+#marron {
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+}
+
+#marronfonce {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(81, 30, 30);
+}
