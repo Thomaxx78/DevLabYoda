@@ -1,5 +1,7 @@
 const animateBtn = document.getElementById("animate-btn");
 
+let a  = window.innerWidth - 1000;
+
 function random(min, max) {
     return Math.random() * (max - min) + min;
   }
@@ -9,8 +11,8 @@ function random(min, max) {
   
   // Create a single tween that animates all elements at the same time
   randomTimeline.to([".a", ".b", ".c", ".d", ".e", ".f", ".g", ".h", ".i", ".j", ".k", ".l", ".m", ".n", ".o", ".p", ".q", ".r", ".s", ".t", ".u", ".v", ".w", ".x", ".y", ".z", ".aa", ".ab", ".ac", ".ad", ".ae", ".af", ".ag", ".ah", ".ai", ".aj", ".ak", ".al", ".am", ".an", ".ao", ".ap", ".aq", ".ar", ".as", ".at", ".au", ".av", ".aw", ".ax", ".ay"], { 
-    duration: 6, 
-    x: () => random(window.innerWidth,0) 
+    duration: 2, 
+    x: () => random(a, 0) 
   });
 
 animateBtn.onclick = () => {
